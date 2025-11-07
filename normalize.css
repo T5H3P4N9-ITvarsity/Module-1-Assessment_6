@@ -506,14 +506,14 @@ a:focus, button:focus, input:focus{
 
 @media (max-width: 1024px) {
     .product-list, .catalogue {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 20px;
     }
 }
 
 @media (max-width: 700px) {
     .product-list, .catalogue {
-        grid-template-columns: 1fr; /* 1 per row on mobile */
+        grid-template-columns: 1fr; 
         gap: 16px;
     }
 }
