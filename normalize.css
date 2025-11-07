@@ -1,6 +1,4 @@
-/* Normalized stylesheet with variables and rem replaced by px and direct colors */
 
-/* Basic reset */
 *{
     box-sizing: border-box;
 }
@@ -382,7 +380,7 @@ h2{
 .thumbnails .thumb:hover{
     border-color: rgba(10,116,218,0.15);
     font-size: 16px;
-
+}
 /* Summary / aside */
 .product-summary{
     background: #ffffff;
@@ -464,4 +462,58 @@ a:focus, button:focus, input:focus{
 
 /* Misc helpers */
 .small-muted{ font-size: 14px; color: #666666; }
-.center{ text-align: center; }
+.center{ text-align: center; } 
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 900px) {
+    .product-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .main-image {
+        height: 240px;
+    }
+
+    .buy-form input[type="number"] {
+        width: 70px;
+    }
+
+    #contact-page, #about-page {
+        margin: 10px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .product-list, .catalogue {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .product-list, .catalogue {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+        gap: 16px;
+    }
+}

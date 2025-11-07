@@ -82,3 +82,43 @@ h2{
 .contact-form button.buy-now {
     margin-top: 12px;
 }
+
+/* RESPONSIVE ADJUSTMENTS */
+@media (max-width: 900px) {
+    .product-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .product {
+        padding: 12px;
+    }
+
+    .main-image {
+        height: 240px;
+    }
+
+    .buy-form input[type="number"] {
+        width: 70px;
+    }
+
+    #contact-page, #about-page {
+        margin: 10px;
+        padding: 16px;
+    }
+}
